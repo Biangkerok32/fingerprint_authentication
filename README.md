@@ -30,15 +30,14 @@ In addition, androidx includes the following features:
 BiometricPromt class is also available in that androidx that package is androidx.biometric.BiometricPrompt. for this we need to implement a dependency that will work for all the android version from marshmallow to higher.
 
 dependencies {
-    implementation "androidx.biometric:biometric:1.0.0-beta"
+    implementation "androidx.biometric:biometric:1.0.1"
 }
 
 ### Drawbacks of using biometric from the androidx package.
-1. Not available stable release
-2. Need to migrate all supported library to android
+1. Need to migrate all supported library to android
 
 
-If you don’t want to use this unstable version or migrate to all supported library to androidx then developers have to implement FingerprintManager for users who have Android devices running versions below Android P and BiometricPromt from version P and higher.
+If you don’t want to migrate to all supported library to androidx then developers have to implement FingerprintManager for users who have Android devices running versions below Android P and BiometricPromt from version P and higher.
 
 ### NOTE
 For use FingerprintManager we have to make minimum supported version to 23 if your application current minimum supported version is less than 23 and you don’t want to upgrade then you have to use FingerprintManagerCompact instead of FingerprintManager that fall in androidx and you have to migrate all the supported library to androidx but fingerprint support will be available only from Marshmallow (6.0) users.

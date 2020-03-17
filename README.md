@@ -1,4 +1,4 @@
-## Authenticate or login user into Android application by finger print sensor
+## Authenticate or login user into Android application by fingerprint sensor
 
 FingerPrint supports comes in android from version 6.0 (Marshmallow) to higher versions. Officially Google gave two options for use fingerprint authentication for android application i.e.
 1.	FingerprintManager
@@ -7,8 +7,8 @@ FingerPrint supports comes in android from version 6.0 (Marshmallow) to higher v
     Depricated in API level 28
     
 2.	BiometricPrompt
-    Contains in package 'android.hardware.biometricz.BiometricPrompt'
-    Added in API level 28Before going forward we should know little bit about androidX here.
+    Contains in package 'android.hardware.biometrics.BiometricPrompt'
+    Added in API level 28
     
 ### Does it mean developers have to implement FingerprintManager for users who have Android devices running versions below Android P and BiometricPromt for from P?
 Ans is No
@@ -30,8 +30,7 @@ In addition, androidx includes the following features:
 BiometricPromt class is also available in that androidx that package is androidx.biometric.BiometricPrompt. for this we need to implement a dependency that will work for all the android version from marshmallow to higher.
 
 dependencies {
-    def biometric_version = "1.0.0-beta"
-    implementation "androidx.biometric:biometric:$biometric_version"
+    implementation "androidx.biometric:biometric:1.0.0-beta"
 }
 
 ### Drawbacks of using biometric from the androidx package.

@@ -21,7 +21,7 @@ AndroidX is a major improvement to the original Android Support Library, which i
 
 In addition, androidx includes the following features:
 
-1.	All packages in AndroidX live in a consistent namespace starting with the string androidx. The Support Library packages       have been mapped into corresponding android.* packages. For a full mapping of all the old classes and build artifacts to       the new ones, see the Package Refactoring page.
+1.	All packages in AndroidX live in a consistent namespace starting with the string androidx. The Support Library packages       have been mapped into corresponding android.* packages. For a full mapping of all the old classes and build artefacts to       the new ones, see the Package Refactoring page.
 2.	Unlike the Support Library, androidx packages are separately maintained and updated. The androidx packages use strict         Semantic Versioning, starting with version 1.0.0. You can update AndroidX libraries in your project independently.
 3.	Version 28.0.0 is the last release of the Support Library. There will be no more android.support library releases. All new     feature development will be in the androidx namespace.
 
